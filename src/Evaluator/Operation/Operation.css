@@ -1,0 +1,42 @@
+.Operation {
+  display: flex;
+  gap: 1rem;
+}
+
+.Operation__Item {
+  align-items: stretch;
+  display: flex;
+  flex: 1;
+  height: 5rem;
+}
+
+.Operation__Item.SecondScreen {
+  flex: 2;
+}
+
+.SecondOperation {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+}
+
+.SecondOperation__Item {
+  align-items: stretch;
+  display: flex;
+  flex: 1;
+  height: 5rem;
+}
+
+@media only screen and (max-width: 36.250em) /* 580px */ {
+  .Operation {
+    flex-direction: column;
+  }
+
+  .Operation__Item {
+    flex: unset;
+  }
+
+  .Operation__Item.SecondScreen {
+    flex: 1;
+  }
+}
